@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel= "stylesheet" type="text/css" href="forecaster.css">
+    <title>Met-Check</title>
+</head>
+
+<body>
+    <script src="forecaster.js"></script>
+    
+<header>
+    <h1>Met-Check</h1>
+    <p>Met-Check has been operating since 2005, providing the people of Ireland</p> accurate national, regional, and local weather forecast.<p> We provide both in-depth textual and graphic weather information.</p><p> Our interactive site gives users multiple options to choose from:</p>
+
+            
+    <p onclick="showHide()" id="dropdown">Click here for more Information:</p>
+        <div id="panel">
+            <p>- Accurate 5 day weather forecast</p>
+            <p>- 3 hour Weather Forecasts</p>
+            <p>- Daily Weather Overviews</p>
+            <p>- Maximum and Minimum Temperatures</p>
+            <p>- Functions to check Air Pressure, Humidity, and Wind Speed</p>
+        </div>
+</header>
+<div id="mapcontainer">
+    <div id="map" style="width:400px; height:400px;">
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    </div>
+</div>
+    
+<div id="dropcontainer">
+    <div class="dayselect">
+        <h2>Daily Weather Updates:</h2>
+        <form>
+            <select id="5days">
+                <option type="number">1</option>
+                <option type="number">2</option>
+                <option type="number">3</option>
+                <option type="number">4</option>
+                <option type="number">5</option>
+            </select>
+        </form>
+    <br><button type="button" onclick="setDisplay()">Check Weather</button>
+    </div>
+    <div class="dayselect"> 
+        <h2>Select advanced forecast information here: </h2>
+        <input type="checkbox" onclick="displayExtraWeather()" id="ExtraCheckBox">Saturday Advanced Forecast<br>  
+        <input type="checkbox" onclick="displayExtraWeather()" id="ExtraCheckBox2">Sunday Advanced Forecast<br>
+        <input type="checkbox" onclick="displayExtraWeather()" id="ExtraCheckBox3">Monday Advanced Forecast<br>
+        <input type="checkbox" onclick="displayExtraWeather()" id="ExtraCheckBox4">Tuesday Advanced Forecast<br>
+        <input type="checkbox" onclick="displayExtraWeather()" id="ExtraCheckBox5">Wednesday Advanced Forecast<br>
+    </div>
+    <div class="dayselect">
+        <h2>Daily 3 hour Weather Updates:</h2>
+        <form>
+            <select id="SelectDetailedDays">
+                <option type="number">0</option>
+                <option type="number">1</option>
+                <option type="number">2</option>
+                <option type="number">3</option>
+                <option type="number">4</option>
+                <option type="number">5</option>
+            </select>
+        </form>
+        <br><button type="button" onclick="setDetailedDisplay()">Check Detailed Weather</button>
+     </div>
+</div>
+
+<div id="weatherContainer">    
+    <div class="weatherDailyDiv">    
+        <div id="Day1Weather"></div>
+        <div id="Day1ExtraInfo"></div>
+    </div>
+    <div class="weatherDailyDiv">    
+        <div id="Day2Weather"></div>
+        <div id="Day2ExtraInfo"></div>
+    </div>
+
+    <div class="weatherDailyDiv">    
+        <div id="Day3Weather"></div>
+        <div id="Day3ExtraInfo"></div>
+    </div>
+
+    <div class="weatherDailyDiv">
+        <div id="Day4Weather"></div>
+        <div id="Day4ExtraInfo"></div>
+    </div>
+
+    <div class="weatherDailyDiv">
+        <div id="Day5Weather"></div>
+        <div id="Day5ExtraInfo"></div>
+    </div>
+</div>
+    
+<div id="detailedWeatheContainer">
+    <div class="detailedHourlyDiv">
+        <div id="DetailedWeather1"></div>
+    </div>
+    <div class="detailedHourlyDiv">
+        <div id="DetailedWeather2"></div>
+    </div>
+    <div class="detailedHourlyDiv">
+        <div id="DetailedWeather3"></div>
+    </div>
+    <div class="detailedHourlyDiv">
+        <div id="DetailedWeather4"></div>
+    </div>
+    <div class="detailedHourlyDiv">
+        <div id="DetailedWeather5"></div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+#panel  {
+    display: none;
+}
+
+#Day1Weather, #Day1ExtraInfo, #Day2Weather, #Day2ExtraInfo, #Day3Weather, #Day3ExtraInfo, #Day4Weather, #Day4ExtraInfo, #Day5Weather, #Day5ExtraInfo  {
+    display: none;
+}
+
+#DetailedWeather1, #DetailedWeather2, #DetailedWeather3, #DetailedWeather4, #DetailedWeather5 {
+    display: none;
+    } 
+
+h2, body{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    }
+
+p, body{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    }
+
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    }
+
+#mapcontainer{
+    text-align: center;
+    padding-left: 30px;
+    background-image: url('Images/snow.jpg');
+    padding-bottom: 30px;
+    padding-top: 30px;
+    }
+
+#map {
+    border: 5px solid black;
+    }
+
+#dropcontainer{
+    background-color: lightblue;
+    height: 200px;
+    margin-top: 10px;
+    padding-left: 50px;
+    }
+
+.dayselect{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    width: 400px;
+    height: 150px;
+    display: inline-block;
+    float: left;
+    margin: 25px;
+    border: 3px solid white;
+    }
+
+#weatherContainer{
+    color: white;
+    background-color: seagreen;
+    margin-top: 10px;
+    
+}
+
+.weatherDailyDiv {
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    margin: 33px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 25px;
+    }
+
+#detailedWeatheContainer{
+    color: white;
+    background-color: seagreen;
+    margin-top: 10px;
+    padding-left: 90px;
+    height: 960px;
+    }
+
+.detailedHourlyDiv{
+    background-color: black;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+    margin: 33px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 25px;
+    }
+
+#dropdown{
+    font-style: italic;
+}
+    
+
+
